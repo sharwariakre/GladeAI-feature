@@ -193,6 +193,16 @@ export default function Home() {
       </header>
 
       <main className="max-w-4xl mx-auto px-6 py-10 space-y-6">
+        {/* ── Info banner ── */}
+        <div className="rounded-lg bg-slate-100 border border-slate-200 px-5 py-3.5">
+          <p className="text-xs font-medium text-slate-600">
+            Conflict of Interest Checker — Prototype
+          </p>
+          <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
+            This is a concept demo built for Glade.ai. The client database is fictional and matching is string-based. Use the preset buttons below to explore all three result states: Clear, Warning, and Conflict. Built by Sharwari Akre.
+          </p>
+        </div>
+
         {/* ── Intake form ── */}
         <section className="bg-white rounded-xl border border-slate-200 shadow-sm">
           <div className="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
