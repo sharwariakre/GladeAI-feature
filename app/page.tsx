@@ -188,7 +188,7 @@ export default function Home() {
             Conflict Checker
           </h1>
           <span className="text-slate-300 text-sm">·</span>
-          <span className="text-xs text-slate-400">Powered by Glade.ai</span>
+          <span className="text-xs text-slate-400">Prototype for Glade.ai</span>
         </div>
       </header>
 
