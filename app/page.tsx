@@ -199,7 +199,7 @@ export default function Home() {
             Conflict of Interest Checker — Prototype
           </p>
           <p className="text-xs text-slate-500 mt-0.5 leading-relaxed">
-            This is a concept demo built for Glade.ai. The client database is fictional and matching is string-based. Use the preset buttons below to explore all three result states: Clear, Warning, and Conflict. Built by Sharwari Akre.
+            This is a concept demo built for Glade.ai. The client database is fictional and matching is string-based. Use the preset buttons below to explore all three result states: Clear, Warning, and Conflict. Built by Sharwari Akre. A production version uses Claude for semantic conflict analysis and explanation generation — LLM calls were omitted from this demo to keep it freely accessible. See the README for the full AI architecture.
           </p>
         </div>
 
