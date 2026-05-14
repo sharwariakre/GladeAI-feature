@@ -1,3 +1,5 @@
+> *Built by Sharwari Akre for a Glade.ai feature — demonstrating product thinking around a conflict-of-interest checker for legal workflow automation platforms.*
+
 # Glade Conflict Checker
 
 > **This is a prototype.** It demonstrates the core UX and matching logic of an AI-powered legal conflict-of-interest checker. The client database is hardcoded, the matching is string-based, and no external systems are connected. The sections below describe what a production version of this tool would look like.
@@ -175,8 +177,8 @@ The core reasoning layer would be Claude. Specifically:
 
 | Model | Role |
 |---|---|
-| `claude-opus-4-7` | Primary conflict analysis: given a set of candidate matches with full matter context, reason about whether each constitutes a real conflict, assign severity, and draft the attorney-facing explanation |
-| `claude-sonnet-4-6` | Real-time intake assistance: as the user fills out the form, suggest likely related parties, flag incomplete entries, auto-classify case type from a description |
+| `claude-opus-4-5` | Primary conflict analysis: given a set of candidate matches with full matter context, reason about whether each constitutes a real conflict, assign severity, and draft the attorney-facing explanation |
+| `claude-sonnet-4-5` | Real-time intake assistance: as the user fills out the form, suggest likely related parties, flag incomplete entries, auto-classify case type from a description |
 | `claude-haiku-4-5` | High-volume preprocessing: normalize incoming party names, extract structured data from unstructured intake notes, classify entity types |
 
 A typical conflict check prompt to Claude Opus would include:
@@ -253,7 +255,7 @@ Background jobs (triggered via Inngest or a cron) keep the database current:
 
 | Layer | Technology |
 |---|---|
-| Framework | Next.js 16 (App Router) |
+| Framework | Next.js 15 (App Router) |
 | Language | TypeScript |
 | Styling | Tailwind CSS v4 |
 | Matching | Custom string normalization + last-name extraction |
